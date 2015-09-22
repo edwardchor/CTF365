@@ -1,0 +1,3 @@
+import base64
+cypher_text = 'R1EyRE1SUlNHQTNUU05TR0c0MlRFTUJXSUkzRUtOU0dHNDNURU1CWEdRM0RRTlJWR0lZRE9NWldHVTNER05aU0dZMlRPTkJTR0EzRU1OUldHSVlET01aV0hFM1RRTlpURzQyRE1NSlhHSTNUR00yRw'
+print base64.b16decode(base64.b32decode(base64.b64decode(cypher_text + '==')))
